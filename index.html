@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thukaram's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Thukaram.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />    
+</head>
+<body>
+    <div class="appbar">
+        <nav>
+            <div id="left">Thukaram's Portfolio</div>
+            <div id="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>               
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="theme">
+                <img onclick="changeMode()" class="theme" src="./day-and-night.png" alt="theme">
+            </div>
+        </nav>
+    </div>
+    <hr id="home" style="background-color: #f2f2f2;">
+    <!-- <div class="m-theme" onclick="changeMode()">
+        <img src="./day-and-night.png" alt="">
+    </div> -->
+    <div class="main-section" >
+        <div class="left-section">
+            <div class="left-info">
+                <div> Hi, My name is <span id="name">Thukaram</span></div>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button id="btn"><a href="https://drive.google.com/file/d/1cHW5zZUTiJ5NfneQ_tc0TeXBFMJKJlar/view?usp=sharing"  target="_blank">
+                            View Resume</a></button>
+                    <button id="btn"><a href="https://www.linkedin.com/in/thukaram-rao-074275251/" target="_blank">
+                            Linked in</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="img-box">
+                <img class="devp-img" src="./developers.png" alt="">
+            </div>
+        </div>
+    </div>
+    <hr id="about"> 
+    <!-- #######################        About       ################################# -->
+    <div class="second-section" >
+        <div class="aleft">
+            <img src="./Thukaram.jpg" alt="">
+        </div>
+        <div class="aright">
+            <h1>About Me</h1>
+            <p>I am enthusiastic and driven, and I have a deep passion for software development and problem-solving. Through years of practice and many personal projects. I honed my skills as a programmer, developing a certain versatility in using technologies and coding languages. I am mostly a self-learner. I can easily adapt to new things and am always ready to take on a challenge.</p>
+            <div class="tabtitles">
+                <p class="tab-links active-link" 
+                    onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')">
+                    Education</p>
+                <p class="tab-links" onclick="opentab('Hobbies')">
+                    Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Hobbies">
+                <ul>
+                    <li>Painting</li>
+                    <li>Fast Typing</li>
+                    <li>Sports:Cricket, Basketball</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2019 - 2023</span><br>R L Jalappa Institue of Technology</li>
+                    <li><span>2017-2019</span><br>Nagarjuna Pre-University College</li>
+                    <li><span>2016-2017</span><br>Vidyanidhi Public School</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr id="projects">
+
+    <!-- ############################   Project     ################################ -->
+    <div class="project-all">
+        <div class="project-container" id="project-container">
+            <h1 class="project" >My Projects</h1>
+        </div>
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <!-- ---------------------------------------------------- -->
+            <div class="swiper-slide project-info">
+                <div class="major-heading">
+                    <h1>Emotion-Based Music Player: Detect and Play by Using Machine Learning</h1>
+                </div>
+                <div class="major-project">
+                    <div class="major-img">
+                        <img class="major-pic" src="https://uploads-ssl.webflow.com/614c82ed388d53640613982e/635bcc2d96817846e4852f51_634fd79657515cf1330c7103_63207867a3bbeed46b755d80_guide-to-face-recognition.png" alt="">
+                    </div>
+                    <div class="major-title">
+                        <div class="major-content">
+                            <h1>Summary:</h1>
+                            <div class="major-para">
+                                <div class="major-para">
+                                    <ul>
+                                        <li>Emotion based music player is a novel approach that helps the user to automatically play songs according to the emotions of the user.</li>
+                                        <li>Used CNN model architecture for music recommendation and emotion recognition in our project.</li>
+                                        <li> In order to create music players that are emotion-based, our technology is focused on understanding human emotions using computer vision and machine learning approaches.</li>
+                                        <li>Technologies/Skills:
+                                            <p>Python</p>
+                                            <p>Anaconda Prompt</p>
+                                        </li>
+                                    </ul>                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide cloud-project">
+                <div class="cloud-heading">
+                    <h1>Hosting Static Website on AWS</h1>
+                </div>
+                <div class="cloud">
+                    <div class="cloud-img">
+                        <img src="./—Pngtree—various information technology cloud computing_6404634.png" alt="">
+                    </div>
+                    <div class="cloud-content">
+                        <h1>Summary:</h1>
+                        <div class="cloud-para">
+                            <ul>
+                                <li>AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS) and packaged-software-as-a-service (SaaS) offerings.</li>
+                                <li>Hosting static websites on Amazon Web Services (AWS) using a combination of Amazon S3 and Amazon EC2.</li>
+                                <li>Proficient in utilizing Amazon S3 for storing website files and assets, while leveraging Amazon EC2 for server-side and dynamic content generation.</li>
+                                <li>Technologies/Skills:
+                                    <p>Cloud Computing</p>
+                                    <p>Amazon Web Services(AWS)</p>
+                                    <p>Amazon EC2</p>
+                                    <p>Amazon S2</p>
+                                </li>
+                            </ul>                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="dbms-heading">
+                    <h1>Hospital Management System</h1>
+                </div>
+                <div class="dbms">
+                    <div class="dbms-img">
+                        <img src="./database.png" alt="">
+                    </div>
+                    <div class="dbms-content">
+                        <h1>Summary:</h1>
+                        <div class="major-para">
+                            <div class="major-para">
+                                <ul>
+                                    <li>An end-to-end database-focused portal for patient registration, organizing information, and fixing appointments with healthcare professionals.</li>
+                                    <li>Using a Python GUI interface and a MySQL administration tool.</li>
+                                    <li>Technologies/Skills:
+                                        <p>Python</p>
+                                        <p>SQL</p>
+                                        <p>Tkinter module</p>
+                                        <p>Xampp</p>
+                                        <p>PyCharm</p>
+                                    </li>
+                                </ul>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="swiper-slide">
+            <div class="knight-heading">
+                <h1>Knight Bight</h1>
+            </div>
+            <div class="knight">
+                <div class="knight-img">
+                    <img src="./KnightBite.png" alt="">
+                </div>
+                <div class="knight-content">
+                    <h1>Summary:</h1>
+                    <div class="knight-para">
+                        <ul>
+                            <li>we create a Restaurant Website using Html and Css.</li>
+                            <li>This is a simple Restaurant Website that has a main home page, types of food available, a food menu, and a contact form section on the restaurant website.</li>
+                            <li>The Html code for the Restaurant Website is the first thing I develop, and after that, the CSS for styling. </li>
+                            <li>Technologies/Skills:
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Visual Studio Code</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+          <!-- <div class="swiper-slide">Magnum
+            <img src="" alt="">
+          </div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <hr  id="contact">
+        <!-- ############################   Contact     ################################ -->
+
+    <div class="contact-container">
+        <div class="contact-title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-queries">
+            <h1>Have You Any Question?</h1>
+            <p>I'm at your service</p>
+        </div>
+        <div class="contact-section">
+            <div class="social-icons">
+                <tr>
+                <ul class="abcd">
+                    <li><img class="contact-img" src="./paper-plane.png" alt="mail" ></li>
+                    <li>thukaram585@gmail.com</li>
+                </ul></tr>
+                <p>
+               <img class="contact-img" src="./phone-call.png" alt="phone-call">
+                    +91 9535005163
+                </p>
+
+                <button class="resbtn"><a href="./ThukaramRao_Resume.pdf" download>Download CV</a></button>
+                <h3 style="font-size: 25px; margin-top: 10px;">Social Links</h3>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/thukaram-rao-074275251/" target="_blank"><img src="./linkedin.png" alt="Linked-in" ></a>
+                    <a href="https://www.facebook.com/thukaram.rao.940" target="_blank"><img src="./facebook.png" alt="Facebook" ></a>
+                    <a href="https://www.instagram.com/_t_h_u_k_u_/?next=%2F" target="_blank"><img src="./instagram.png" alt="Instagram" ></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                    <button class="submit" type="submit">Submit</button>
+                </form>
+                <span id="msg-sent"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Thukaram</p>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

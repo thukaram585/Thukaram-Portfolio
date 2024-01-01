@@ -1,0 +1,808 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dark {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+body{
+    background-color: #f2f2f2;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box
+}
+.appbar{   
+    zoom: .8;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    backdrop-filter: blur(7px);
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+    position: fixed;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 15px 30px;
+}
+li a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: 550;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+nav ul li a:hover{
+    font-size: 1.4rem;
+    text-decoration:underline;
+}
+
+#left{    
+    flex-basis: 55%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#right{
+    flex-basis: 40%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+#theme img{
+    width: 40px;
+    cursor: pointer;
+}
+/* ------------------------- SECTION ---------------------------------- */
+.main-section{
+    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.left-section{
+    flex-basis: 45%;
+    margin: auto;
+    padding-left: 70px;
+}
+.left-info{
+    font-size: 2.5rem;
+}
+.right-section{
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.right-section .img-box{
+    border:none;
+    width: 90%;
+}
+.right-section img{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+.left-section .button{
+padding:  40px 0;
+}
+#btn{
+    padding: 12px;
+    color: black;
+    border: lavenderblush;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: pointer;
+    background-color: orangered;
+}
+#btn:hover{
+    transform: scale(1.02);
+}
+.left-section #btn a{
+    text-decoration: none;
+}
+.left-section #btn a:link{
+    color: white;
+}
+.left-section #btn a:visited{
+    color: white;
+}
+
+#name{
+    color: orangered;
+    font-size: 2.5rem;
+}
+#element{
+    color: orangered;
+    font-size: 2.5rem;
+}
+
+hr{
+    border: 0;
+    background-color: lavender;
+    height: 2px;
+    margin: 10px 70px;
+}
+@media only screen and (max-width:800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 10px;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 55px;
+        margin-bottom: 1px;
+        margin-left: 25px;
+    }
+    .right-section{
+        margin: 30px 0 0 20px;
+    }
+    .img-box{
+        padding: 10px;
+        transform: scale(1.3);
+    }
+    .left-section{
+        padding-left: 30px;
+        position: relative;
+        right: 10px;
+    }
+    .left-info{
+        font-size: 29px;
+        text-align: center;
+        margin: 0 20px 0 10px;
+    }
+    #name{
+        font-size: 28px;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #element{
+        font-size: 27px;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    hr{
+        margin: 10px 40px;
+    }
+    #theme{
+        background: rgba(0,0,0,.12);
+        backdrop-filter: blur(7px);
+        position: absolute;
+        right: 5px;
+        top: 95px;
+        border-radius: 40%;
+    }
+}
+
+/* ####################################################################################
+################################################################################## */
+
+.second-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.aleft{
+    flex-basis: 40%;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.aleft img{
+    width: 70%;
+    margin: 40px;
+    border-radius: 20% 5% 20% 5%;
+    border: 3px solid orangered;
+    padding: 20px;
+}
+.aright{
+    flex-basis: 60%;
+}
+.aright h1{
+    font-size: 55px;
+    font-weight: 550;
+    color: orangered;
+}
+.aright p{
+    text-align: justify;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 0px;
+}
+.aright>p{
+    padding-right: 40px;
+}
+.tabtitles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents{
+    display: none;
+}
+span{
+    color:orangered;
+    /* font-size: 14px; */
+}
+.tab-contents.active-tab{
+    display: block;
+}
+@media only screen and (max-width:800px){
+    .second-section{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .aleft{
+        flex-basis: 100%;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .aleft img{
+        width: 90%;
+        margin-left: -5px;
+    }
+    .aright{
+        margin-left: 10px;
+        flex-basis: 100%;
+    }
+    .aright h1{
+        font-size: 2.5rem;
+    }
+    .aright p{
+        padding-right: 0px;
+    }
+}
+/* ######################################################################################
+############################################################################# */
+
+.project-container{
+    margin: 60px 75px;
+}
+.project-container h1{
+    font-size: 60px;
+    font-family: 550;
+    color: orangered;
+    margin: 20px 0;
+}
+
+.swiper {
+    width: 95%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.major-heading{
+    margin: 25px 40px;
+    margin-bottom: 0;
+}
+.major-heading h1{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.major-project{
+    height:100%;
+    width: 100%;
+    margin: 0 30px;
+    display: flex;
+    padding: 30px;
+}
+.major-img{
+    height: 300px;
+    flex-basis: 30%;
+}
+.major-img .major-pic{
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    margin: 15px;
+}
+
+.major-title{
+    height: 100%;
+    flex-basis: 60%;
+}
+
+.major-content{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.major-para{
+    width: 92%;
+    height: 70%;
+    margin: 12px auto;  
+}
+.major-para li{
+    font-size: 18px;
+    justify-content: left;
+    text-align: justify;
+    margin: 6px 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.major-content h1{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+.major-para li p{
+    margin: 5px 25px;
+    font-size: 18px;
+}
+
+.cloud-project img{
+    height: 10%;
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    .project-container{
+        margin:60px 30px 0 30px;
+    }
+    .project-container h1{
+        font-size: 2.5rem;
+    }
+    .major-heading h1{
+        font-size: 24px;
+    }
+    .major-project{
+        flex-direction: column;
+        width: 80%;
+    }
+    .major-img .major-pic{
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;
+        margin-left: -15px;
+    }
+    .swiper{
+        width: 112%;
+    }
+    .major-content h1{
+        font-weight: 600;
+    }
+}
+
+.cloud-heading{
+    margin: 25px 40px;
+    margin-bottom: 0;
+}
+.cloud-heading h1{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cloud{
+    height:100%;
+    width: 90%;
+    display: flex;
+    padding: 30px;
+    margin: 2% 5%;
+}
+.cloud-img{
+    flex-basis: 30%;
+    height: 90%;
+    width: 90%;
+}
+.cloud-content{
+    flex-basis: 60%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.cloud-para{
+    width: 92%;
+    height: 70%;
+    margin: 12px auto;
+}
+.cloud-para li{
+    font-size: 18px;
+    justify-content: left;
+    text-align: justify;
+    margin: 6px 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cloud-content h1{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+.cloud-para li p{
+    margin: 5px 25px;
+    font-size: 18px;
+}
+@media only screen and (max-width:600px){
+    .project-container{
+        margin:60px 30px 0 30px;
+    }
+    .project-container h1{
+        font-size: 2.5rem;
+    }
+    .cloud-heading h1{
+        font-size: 24px;
+    }
+    .cloud{
+        flex-direction: column;
+        width: 80%;
+        margin-top: -10%;
+    }
+    .cloud-img{
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;    
+    }
+    .swiper{
+        width: 112%;
+    }
+}
+.dbms-heading{
+    margin: 25px 40px;
+    margin-bottom: 0;
+}
+.dbms-heading h1{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dbms{
+    display: flex;
+    margin: 2% 5%;
+    height:100%;
+    width: 90%;
+    padding: 30px;
+}
+.dbms-img{
+    flex-basis: 30%;
+    height: 90%;
+    width: 90%;
+}
+.dbms-content{
+    flex-basis: 60%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.dbms-para{
+    width: 92%;
+    height: 70%;
+    margin: 12px auto;
+}
+.dbms-para li{
+    font-size: 18px;
+    justify-content: left;
+    text-align: justify;
+    margin: 6px 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.dbms-content h1{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+.dbms-para li p{
+    margin: 5px 25px;
+    font-size: 18px;
+}
+@media only screen and (max-width:600px){
+    .project-container{
+        margin:60px 30px 0 30px;
+    }
+    .project-container h1{
+        font-size: 2.5rem;
+    }
+    .dbms-heading h1{
+        font-size: 24px;
+    }
+    .dbms{
+        flex-direction: column;
+        width: 80%;
+        margin-top: -10%;
+    }
+    .dbms-img{
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;    
+    }
+    .swiper{
+        width: 112%;
+    }
+}
+/* ---------- */
+.knight-heading{
+    margin: 25px 40px;
+    margin-bottom: 0;
+}
+.knight-heading h1{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.knight{
+    display: flex;
+    margin: 2% 5%;
+    height:100%;
+    width: 90%;
+    padding: 30px;
+}
+.knight-img{
+    flex-basis: 30%;
+    height: 90%;
+    width: 90%;
+    margin: auto 0;
+}
+.knight-img img{
+    margin: 20px 0;
+}
+.knight-content{
+    flex-basis: 60%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.knight-para{
+    width: 92%;
+    height: 70%;
+    margin: 12px auto;
+}
+.knight-para li{
+    font-size: 18px;
+    justify-content: left;
+    text-align: justify;
+    margin: 6px 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.knight-content h1{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+.knight-para li p{
+    margin: 5px 25px;
+    font-size: 18px;
+}
+@media only screen and (max-width:600px){
+    .project-container{
+        margin:60px 30px 0 30px;
+    }
+    .project-container h1{
+        font-size: 2.5rem;
+    }
+    .knight-heading h1{
+        font-size: 24px;
+    }
+    .knight{
+        flex-direction: column;
+        width: 80%;
+    }
+    .knight-img{
+        border-radius: 20px;
+        width: 100%;
+        height: 90%;    
+    }
+    .swiper{
+        width: 112%;
+    }
+}
+/* #####################################################################################
+##################################################################################### */
+
+.contact-container{
+    margin: 50px 70px;
+}
+.contact-title h1{
+    font-size: 60px;
+    color: orangered;
+    margin: 20px 0;
+}
+.abcd{
+    display: flex;
+    list-style: none;
+}
+.abcd>li{
+    flex-basis: 10%;
+}
+.contact-queries{
+    text-align: center;
+    margin: 30px auto;
+    flex-basis: 100%;
+}
+.social-icons{
+    display: inline-block;
+    flex-basis: 30%;
+}
+.social-icons p{
+    margin: 15px 0;
+}
+.social-icons p span{
+    color: black;
+}
+.contact-img{
+    margin-right:15px;
+    width: 30px;
+}
+
+.resbtn{
+    margin: 20px;
+    width: 65%;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    background-color:  white ;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.resbtn a{
+    text-decoration: none;
+}
+.resbtn a:link{
+    color: black;
+}
+.resbtn:hover{
+    background-color: orangered;
+    color: white;
+}
+.resbtn a:visited{
+    color: black;
+}
+.social-icon img{
+    width: 60px;
+    margin: 20px 10px;
+}
+.contact-section{
+    display: flex;
+}
+.contact-right{
+    flex-basis: 70%;
+}
+.contact-right form{
+    width: 95%;
+    
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: lightgray;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.submit{
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+} 
+.submit:hover{
+    background-color: orangered;
+    color: white;
+}
+.submit:link{
+    color: black;
+}
+.submit:visited{
+    color: black;
+}
+.submit:active{
+    color: black;
+}
+#msg-sent{
+    margin: 10px;
+    color: #61b752;
+    display: block;
+    font-size: 20px;
+}
+@media only screen and (max-width:600px){
+    .contact-container{
+        margin: 60px 30px;
+        width: 100%;
+    }
+    .contact-title h1{
+        font-size: 2.5rem;
+    }
+    .contact-queries{
+        margin: 20px 0;
+        margin-left: 30px;
+    }
+    .contact-queries h1{
+        font-size: 22px;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .resbtn{
+        margin: 20px 60px;
+    }
+    form input,form textarea{
+        width: 95%;
+    }
+    
+}
+.copyright{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background-color: #262626;
+    color: white;
+    padding: 12px 0;
+}
+@media only screen and (max-width:800px) {
+    .copyright{
+        width: 120%;
+    }
+}
